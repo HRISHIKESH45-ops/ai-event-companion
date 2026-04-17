@@ -86,7 +86,7 @@ export async function POST(req: Request) {
                   },
                 },
                 required: ["title", "hype_summary", "plan", "prep_sheet"],
-              },
+              } as any,
             },
           });
           break; // Success

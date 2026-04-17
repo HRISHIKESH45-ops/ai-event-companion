@@ -79,7 +79,7 @@ export async function POST(req: Request) {
     }
 
     // Response schema (shared across attempts)
-    const responseSchema = {
+    const responseSchema: any = {
       type: SchemaType.OBJECT,
       properties: {
         title: { type: SchemaType.STRING, description: "A catchy title for this schedule" },
